@@ -1,0 +1,17 @@
+Llvdl\TweeterCoreBundle\Entity\Tweet:
+    type: entity
+    table: tweet
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        text:
+            type: string
+            length: 255
+        timestamp:
+            type: integer
+    manyToOne:
+        tweeter:
+            targetEntity: Llvdl\TweeterCoreBundle\Entity\Tweeter
