@@ -13,7 +13,7 @@ class TweetServiceIntegrationTest extends WebTestCase {
     }
 
     public function testGetService() {
-        $service = self::$kernel->getContainer()->get('finalist_tweeter_core.tweet_service');
+        $service = self::$kernel->getContainer()->get('llvdl_tweeter_core.tweet_service');
         $this->assertNotNull($service);
     }
 

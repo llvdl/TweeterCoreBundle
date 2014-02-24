@@ -53,7 +53,7 @@ tweeter entity is created automatically if it does not already exist.
 
 To get a list of recent tweets in a controller:
 
-    $service = $this->get('finalist_tweeter_core.tweet_service');
+    $service = $this->get('llvdl_tweeter_core.tweet_service');
     $tweets = $service->getRecentTweets();
     // do something with $tweets
 

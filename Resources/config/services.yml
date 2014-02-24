@@ -1,19 +1,19 @@
 parameters:
-    finalist_tweeter_core.tweeter_service.class: Llvdl\TweeterCoreBundle\Service\TweetService
-    finalist_tweeter_core.tweet_repository.class: Llvdl\TweeterCoreBundle\Repository\Impl\TweetRepositoryDoctrineImpl
-    finalist_tweeter_core.tweeter_repository.class: Llvdl\TweeterCoreBundle\Repository\Impl\TweeterRepositoryDoctrineImpl
+    llvdl_tweeter_core.tweeter_service.class: Llvdl\TweeterCoreBundle\Service\TweetService
+    llvdl_tweeter_core.tweet_repository.class: Llvdl\TweeterCoreBundle\Repository\Impl\TweetRepositoryDoctrineImpl
+    llvdl_tweeter_core.tweeter_repository.class: Llvdl\TweeterCoreBundle\Repository\Impl\TweeterRepositoryDoctrineImpl
 
 services:
-    finalist_tweeter_core.tweeter_repository:
-        class: %finalist_tweeter_core.tweeter_repository.class%
+    llvdl_tweeter_core.tweeter_repository:
+        class: %llvdl_tweeter_core.tweeter_repository.class%
         arguments: [@doctrine.orm.entity_manager]
         public: false
-    finalist_tweeter_core.tweet_repository:
-        class: %finalist_tweeter_core.tweet_repository.class%
+    llvdl_tweeter_core.tweet_repository:
+        class: %llvdl_tweeter_core.tweet_repository.class%
         arguments: [@doctrine.orm.entity_manager]
         public: false
 
-    finalist_tweeter_core.tweet_service:
-        class: %finalist_tweeter_core.tweeter_service.class%
-        arguments: [@finalist_tweeter_core.tweet_repository, @finalist_tweeter_core.tweeter_repository]
+    llvdl_tweeter_core.tweet_service:
+        class: %llvdl_tweeter_core.tweeter_service.class%
+        arguments: [@llvdl_tweeter_core.tweet_repository, @llvdl_tweeter_core.tweeter_repository]
 
