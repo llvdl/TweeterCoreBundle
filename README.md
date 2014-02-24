@@ -1,7 +1,7 @@
 Llvdl Tweeter Core Bundle
 =========================
 
-This is a sample Symfony2 bundle that contains a simple service store and 
+This is a sample Symfony2 bundle that contains a simple service to store and 
 retrieve "tweets". The bundle consists of a service implementation, including a 
 repository based on doctrine. It has no forms or controllers.
 
