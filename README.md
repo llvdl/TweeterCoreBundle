@@ -11,7 +11,7 @@ Installing
 
 Add the following line to the `require` section in your composer.json file:
 
-`require: 'llvdl/example-tweeter-core-bundle`
+`"llvdl/example-tweeter-core-bundle": "dev-master"`
 
 and run composer update.
 
