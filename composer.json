@@ -1,0 +1,27 @@
+{
+    "name": "llvdl/example-tweeter-core-bundle",
+    "type": "symfony-bundle",
+    "description": "Example Symfony2 bundle",
+    "keywords": ["example", "bundle"],
+    "homepage": "http://github.com/llvdl/TweeterCoreBundle",
+    "license": "MIT",
+    "authors": [{
+            "name": "Lennaert van der Linden",
+            "email": "lennaertvanderlinden@gmail.com"
+        }],
+    "require": {
+        "php": ">=5.3.2",
+        "doctrine/orm": "~2.2,>=2.2.3",
+        "doctrine/doctrine-bundle": "~1.2"
+    },
+    "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "dev-master",
+        "liip/functional-test-bundle": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {"Llvdl\\TweeterCoreBundle": ""}
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Llvdl/TweeterCoreBundle"
+
+}
